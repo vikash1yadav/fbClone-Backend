@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // db config
-const mongoURI='mongodb://localhost:27017/fbmern-db'
+const mongoURI='mongodb+srv://admin-vikas:test123@cluster0.uj8sv.mongodb.net/fbmern-db?retryWrites=true&w=majority'
 
 const conn = mongoose.createConnection(mongoURI, {
     useCreateIndex: true,
