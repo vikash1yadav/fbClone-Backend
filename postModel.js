@@ -5,7 +5,8 @@ const postModel = mongoose.Schema({
     imgName: String,
     text: String,
     avatar: String,
-    timeStamp: String
+    timestamp: String
 })
 
-export default mongoose.model('posts', postModel)
+
+export default mongoose.model('posts', postModel) 

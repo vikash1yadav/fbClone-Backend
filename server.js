@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // db config
-const mongoURI='mongodb+srv://admin-vikas:test123@cluster0.uj8sv.mongodb.net/fbmern-db?retryWrites=true&w=majority'
+const mongoURI='mongodb://localhost:27017/fbmern-db'
 
 const conn = mongoose.createConnection(mongoURI, {
     useCreateIndex: true,
@@ -114,3 +114,8 @@ app.get('/retrieve/images/single', (req, res) => {
 
 // listen
 app.listen(port, () => console.log('listening on local host:9000'))
+
+
+//mongodb+srv://admin-vikas:test123@cluster0.uj8sv.mongodb.net/fbmern-db?retryWrites=true&w=majority
+
+//mongodb://localhost:27017/userDB
